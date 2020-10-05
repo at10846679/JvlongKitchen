@@ -2,7 +2,7 @@
 
 clear
 
-echo "Jvlong's Kitchen 20201002"
+echo "Jvlong's Kitchen 20201005"
 echo "请将要解包的system/vendor/boot/update.zip等文件放置于本工具根目录"
 echo ""
 echo "一.解包"
@@ -31,8 +31,8 @@ read -p "请输入您的选择：" c
 
 if [ "$c" == "0" ]; then 
     exit
-# elif [ "$c" == "1" ]; then 
-     
+elif [ "$c" == "1" ]; then 
+	bash ./scripts/unpack/autounpack.sh	     
 elif [ "$c" == "2" ]; then 
 	bash ./scripts/unpack/unpack_system.sh
 elif [ "$c" == "3" ]; then 
